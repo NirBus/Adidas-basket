@@ -139,17 +139,191 @@ header nav .navbar-icons a:link {
 header nav .navbar-icons a:link i {
   cursor: pointer; }
 
+.bg-img {
+  width: 100%;
+  height: 831px;
+  background-image: url("../Image/orig-ss22-stansmith-PC.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  display: block; }
+
+.mainn {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  height: 500px; }
+
+.main-text {
+  width: 35%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.main-title {
+  font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+  font-size: 42px;
+  margin: 0 0 10px;
+  letter-spacing: -2px; }
+
+.main-title-2 {
+  font-size: 19px; }
+
+.btn,
+.btn-2 {
+  margin: 15px 0;
+  position: relative;
+  z-index: 0; }
+
+.btn button,
+.btn-2 button {
+  color: white;
+  background-color: black;
+  letter-spacing: 2px;
+  font-weight: 550; }
+
+main .container .main-text .btn button:hover,
+.btn-2 button:hover {
+  color: #6f6d65; }
+
+main .container .main-text .btn button .arrow-ico {
+  margin-left: 12px; }
+
+.btn-fog {
+  height: 50px;
+  width: 186px;
+  border: 1.5px solid;
+  position: relative;
+  left: 3.5px;
+  top: 3px;
+  z-index: 1; }
+
+.btn-fog-2 {
+  height: 50.5px;
+  width: 146px;
+  border: 1.5px solid;
+  position: relative;
+  left: 3.5px;
+  top: 3px;
+  z-index: 1; }
+
+.main-text button {
+  font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+  padding: 0 15px;
+  height: 50px;
+  position: absolute;
+  z-index: 2;
+  background-clip: padding-box;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  overflow: visible;
+  margin: 0;
+  text-decoration: none;
+  vertical-align: top;
+  line-height: 2.75;
+  text-align: center;
+  font-size: 14px; }
+
+.main-text button:active {
+  transform: scale(0.9); }
+
+.main-text button::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.main-text button,
+.shadow {
+  transition-duration: .2s;
+  transition: all .2s ease-out; }
+
+.main-text button {
+  transition-property: transform; }
+
+.pg2-text-title {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.pg2-text-title h2 {
+  font-size: 30px;
+  margin: 0 0 15px;
+  font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 600; }
+
+.pg2-text {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0; }
+
 .row {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  padding: 0 15px; }
+
+.pg2-text-area {
+  display: block;
+  box-sizing: border-box;
+  margin-top: 15px;
+  line-height: 22px; }
+
+.pg2-part-2-buttons {
+  justify-content: center; }
+
+.page-2 .pg2-part-2-buttons a:link {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+  color: black;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: none;
+  outline: none;
+  align-items: center;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration-style: solid; }
+
+#addition1 .custom-container {
+  margin: 0 20px; }
+
+#addition1 .common-size {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+  margin: 5px;
+  padding: 10px;
+  box-shadow: none;
+  align-items: center; }
+
+#addition1 .card {
+  width: 100%;
+  height: 100%; }
+
+#addition1 .image {
+  margin: 0 30px; }
+
+#addition1 .image img {
+  width: 400px;
+  height: 100%; }
+
+.row {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
   width: 100%; }
 
-.main-text {
+.main-text-pg2 {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; }
+  align-items: flex-start;
+  width: 62%; }
 
-main .main-text h3 {
+main .main-text-pg2 h3 {
   font-family: "AdineuePRO",Helvetica,Arial,sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -160,7 +334,11 @@ main .main-text h3 {
   box-sizing: border-box;
   margin: 15px 0; }
 
-main .container .row button span {
+.pg-right {
+  display: block;
+  width: 50%; }
+
+main .container .row .pg-right button span {
   text-transform: uppercase;
   font-size: 14px;
   font-stretch: 100%;
@@ -168,11 +346,30 @@ main .container .row button span {
   letter-spacing: 2px;
   line-height: 20px;
   font-family: AdihausDIN, Helvetica, Arial, sans-serif;
-  box-sizing: border-box;
-  text-align: end;
-  text-overflow: ellipsis;
+  box-sizing: block;
+  text-overflow: ellipsis; }
+
+main .container .row .pg-right .pg2-button-up button {
+  border: none;
+  cursor: pointer;
   background: none;
-  border: none; }
+  text-decoration: underline;
+  line-height: 22px;
+  width: 55%;
+  align-items: flex-end;
+  margin-left: 52px; }
+
+main .container .row .pg-right button:hover {
+  background-color: #000000;
+  color: white; }
+
+.pg2-button-up {
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 15px; }
 
 @media screen and (max-width: 700px) {
   .navbar-up {
@@ -284,4 +481,16 @@ main .container .row button span {
     display: block; }
   .container {
     margin: 0;
-    padding: 20px 15px 15px; } }
+    padding: 20px 15px 15px; }
+  .mainn {
+    display: flex;
+    flex-direction: row;
+    height: 432px; }
+  .main-text {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: end; }
+  .main-title {
+    font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+    font-size: 36px; } }
